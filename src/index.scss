@@ -1,0 +1,151 @@
+$backgroundColor: #21222C;
+@import url("https://fonts.googleapis.com/css?family=Nunito:wght@400;900&display=swap");
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $backgroundColor;
+}
+
+#root {
+    line-height: 1.5;
+    font-family: "Nunito";
+    user-select: none;
+    color: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+}
+
+.inner-container {
+    .pad-bank {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        .drum-pad {
+            font-weight: 900;
+            width: 100px;
+            height: 90px;
+            margin: 8px;
+            border-radius: 6px;
+            padding-top: 32px;
+            cursor: pointer;
+        }
+        #Heater-1, #Chord-1 {
+            background: radial-gradient(#66B0FF 15%, #1A89FF,);
+        }
+        
+        #Heater-2, #Chord-2  {
+            background: radial-gradient(#A04DFF 15%, #7900FF);
+        }
+        
+        #Heater-3, #Chord-3 {
+            background: radial-gradient(#FF3C6E 50%, #CC3158);
+        }
+        
+        #Heater-4, #Shaker {
+            background: radial-gradient(#66B0FF 15%, #1A89FF,);
+        }
+        
+        #Clap, #Open--HH {
+            background: radial-gradient(#E14DFF 20%, #D400FF);
+        }
+        
+        #Open-HH, #Closed-HH {
+            background: radial-gradient(#E14DFF 20%, #D400FF);
+        }
+        
+        #Kick-n-Hat, #Punchy-Kick {
+            background: radial-gradient(#FF3C6E 50%, #CC3158);
+        }
+        
+        #Kick, #Side-Stick {
+            background: radial-gradient(#66B0FF 15%, #1A89FF,);
+        }
+        
+        #Closed--HH, #Snare {
+            background: radial-gradient(#A04DFF 15%, #7900FF);
+        }
+    }
+    .controls-container {
+        .control {
+            display: flex;
+            align-items: center;
+            width: 100px;
+            margin: auto;
+            p {
+                margin-right: 8px
+            }
+            .select {
+                @extend .outer-select;
+                .inner {
+                    @extend .inner-select;
+                }
+            }
+        }
+        #display {
+            width: 180px;
+            background-color: #9397C4;
+            margin: 15px auto;
+            padding: 14px;
+            box-sizing: border-box;
+            border-radius: 6px;
+        }
+        [type="range"] {
+            -webkit-appearance: none;
+            background-color: #9397C4;
+            cursor: pointer;
+            &:focus {
+                outline: none;
+            }
+            &:hover::-webkit-slider-runnable-track {
+                background-color: #DDD;
+            }
+            &::-webkit-slider-runnable-track {
+                width: 100%;
+                height: 5px;
+                background-color: #EEE;
+                border: none;
+                border-radius: 3px;
+            }
+            &::-webkit-slider-thumb {
+                -webkit-appearance: none;
+                height: 16px;
+                width: 16px;
+                border: none;
+                border-radius: 50%;
+                background: #9397C4;
+                margin-top: -5px;
+            }
+        }
+    }
+}
+
+.outer-select {
+    margin: auto;
+    width: 50px;
+    height: 20px;
+    padding: 1px;
+    background-color: #EEE;
+    border-radius: 6px;
+    cursor: pointer;
+    &:hover {
+        background-color: #DDD;
+    }
+}
+
+.inner-select {
+    width: 23px;
+    height: 17px;
+    border-radius: 6px;
+    background: #9397C4;
+}
+
+@media screen and (max-width: 650px) {
+    .inner-container {
+        transform: scale(.7);
+    }
+}

@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito:wght@400;900&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #21222C;
+}
+
+#root {
+  line-height: 1.5;
+  font-family: "Nunito";
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  color: #FFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  height: 100vh;
+}
+
+.inner-container .pad-bank {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+}
+
+.inner-container .pad-bank .drum-pad {
+  font-weight: 900;
+  width: 100px;
+  height: 90px;
+  margin: 8px;
+  border-radius: 6px;
+  padding-top: 32px;
+  cursor: pointer;
+}
+
+.inner-container .pad-bank #Heater-1, .inner-container .pad-bank #Chord-1 {
+  background: radial-gradient(#66B0FF 15%, #1A89FF);
+}
+
+.inner-container .pad-bank #Heater-2, .inner-container .pad-bank #Chord-2 {
+  background: radial-gradient(#A04DFF 15%, #7900FF);
+}
+
+.inner-container .pad-bank #Heater-3, .inner-container .pad-bank #Chord-3 {
+  background: radial-gradient(#FF3C6E 50%, #CC3158);
+}
+
+.inner-container .pad-bank #Heater-4, .inner-container .pad-bank #Shaker {
+  background: radial-gradient(#66B0FF 15%, #1A89FF);
+}
+
+.inner-container .pad-bank #Clap, .inner-container .pad-bank #Open--HH {
+  background: radial-gradient(#E14DFF 20%, #D400FF);
+}
+
+.inner-container .pad-bank #Open-HH, .inner-container .pad-bank #Closed-HH {
+  background: radial-gradient(#E14DFF 20%, #D400FF);
+}
+
+.inner-container .pad-bank #Kick-n-Hat, .inner-container .pad-bank #Punchy-Kick {
+  background: radial-gradient(#FF3C6E 50%, #CC3158);
+}
+
+.inner-container .pad-bank #Kick, .inner-container .pad-bank #Side-Stick {
+  background: radial-gradient(#66B0FF 15%, #1A89FF);
+}
+
+.inner-container .pad-bank #Closed--HH, .inner-container .pad-bank #Snare {
+  background: radial-gradient(#A04DFF 15%, #7900FF);
+}
+
+.inner-container .controls-container .control {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100px;
+  margin: auto;
+}
+
+.inner-container .controls-container .control p {
+  margin-right: 8px;
+}
+
+.inner-container .controls-container #display {
+  width: 180px;
+  background-color: #9397C4;
+  margin: 15px auto;
+  padding: 14px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 6px;
+}
+
+.inner-container .controls-container [type="range"] {
+  -webkit-appearance: none;
+  background-color: #9397C4;
+  cursor: pointer;
+}
+
+.inner-container .controls-container [type="range"]:focus {
+  outline: none;
+}
+
+.inner-container .controls-container [type="range"]:hover::-webkit-slider-runnable-track {
+  background-color: #DDD;
+}
+
+.inner-container .controls-container [type="range"]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 5px;
+  background-color: #EEE;
+  border: none;
+  border-radius: 3px;
+}
+
+.inner-container .controls-container [type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 16px;
+  width: 16px;
+  border: none;
+  border-radius: 50%;
+  background: #9397C4;
+  margin-top: -5px;
+}
+
+.outer-select, .inner-container .controls-container .control .select {
+  margin: auto;
+  width: 50px;
+  height: 20px;
+  padding: 1px;
+  background-color: #EEE;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.outer-select:hover, .inner-container .controls-container .control .select:hover {
+  background-color: #DDD;
+}
+
+.inner-select, .inner-container .controls-container .control .select .inner {
+  width: 23px;
+  height: 17px;
+  border-radius: 6px;
+  background: #9397C4;
+}
+
+@media screen and (max-width: 650px) {
+  .inner-container {
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+  }
+}
+/*# sourceMappingURL=index.css.map */
