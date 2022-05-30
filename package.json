@@ -2,6 +2,7 @@
   "name": "drum-machine",
   "version": "1.0.0",
   "description": "Drum machine app made with React",
+  "homepage": "https://alevargass.github.io/drum-machine/",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
